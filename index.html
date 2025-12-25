@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Navine Bet</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<div id="app">
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="logo">NAVINE<span>BET</span></div>
+
+    <nav>
+      <button data-view="lobby">Lobby</button>
+      <button data-view="crash">Crash</button>
+      <button data-view="dice">Dice</button>
+      <button data-view="mines">Mines</button>
+      <button data-view="plinko">Plinko</button>
+      <button data-view="limbo">Limbo</button>
+      <button data-view="roulette">Roulette</button>
+      <button data-view="blackjack">Blackjack</button>
+      <button data-view="poker">Video Poker</button>
+      <button data-view="keno">Keno</button>
+    </nav>
+  </aside>
+
+  <!-- Main -->
+  <main class="main">
+    <header class="topbar">
+      <div class="balance">Balance: <b id="balance">$0</b></div>
+      <div>
+        <button id="deposit">Deposit</button>
+        <button id="reset">Reset</button>
+      </div>
+    </header>
+
+    <section id="view"></section>
+  </main>
+</div>
+
+<div id="toasts"></div>
+
+<script src="js/app.js"></script>
+<script src="js/ui.js"></script>
+
+<!-- Games -->
+<script src="js/games/crash.js"></script>
+<script src="js/games/dice.js"></script>
+<script src="js/games/mines.js"></script>
+<script src="js/games/plinko.js"></script>
+<script src="js/games/limbo.js"></script>
+<script src="js/games/roulette.js"></script>
+<script src="js/games/blackjack.js"></script>
+<script src="js/games/poker.js"></script>
+<script src="js/games/keno.js"></script>
+
+</body>
+</html>
